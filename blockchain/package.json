@@ -1,0 +1,20 @@
+{
+  "name": "kisan-flow-blockchain",
+  "version": "1.0.0",
+  "description": "Smart contracts for Kisan Flow on Polygon",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:polygon": "hardhat run scripts/deploy.js --network polygon"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.1"
+  }
+}
